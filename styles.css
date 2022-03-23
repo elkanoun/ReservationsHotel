@@ -1,0 +1,346 @@
+/* Created by http://freehtml5templates.com */
+/* les marges intérieurs et éxtérieurs */
+* {
+	margin: 0;
+	padding: 0;
+	}
+
+/* rendre les élèments en bloques*/
+header, footer, section, aside, nav, article {
+	display:block;
+	}
+
+/* formulaire de recherche */
+.villes{
+                background:#FFFF00;
+				border: 10px thin #FF0000;
+				width:900px;
+				height:250px;
+				}
+.villes p
+{
+color:#000099;
+font-size:18px;
+}
+.villes p span
+{
+color:#CC0099;
+font-size:18px;
+}
+.villes img{
+float:left;
+background-position:center;
+
+}
+/* formulaire de confirmation de types */
+#types{
+                background:#FFFF00;
+				border: 10px thin #FF0000;
+				width:200px;
+				height:100px;
+				display:block;
+				float:right;
+				padding-right:10px;
+				
+				}
+/* formulaire de confirmation de types */
+               #confirmation_selections{
+			    background:#CC0099;
+				border: 10px thin #FF0000;
+				width:200px;
+				height:340px;
+				display:block;
+				float:right;
+				padding-right:10px;
+				}
+                
+				
+/* style de formuliare d'inscription */
+
+.invitation
+{
+color:#FF0000;
+
+}
+.form_inscription
+{
+background-color:#FFFF00;
+border:#FF0000 double 6px;
+margin:top;
+}
+.inv{
+color:#0000FF;
+font-size:12px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.inv span{
+color:#FF0000;
+}
+body {
+	margin: 0 auto;
+	width: 960px;
+	font: 14px/20px "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	background:url(../images/logos_icons/fond_jaune.png);
+	}
+	/* P: les sous titres  */
+
+h1 {
+	font-size: 48px;
+	padding: 20px 0;
+	text-shadow: 2px 2px 2px #000;
+	color: #fff;
+	}
+h2 {
+	font-size: 24px;
+	padding: 20px 0;
+	}
+
+h3 {
+	font-size: 18px;
+	padding: 10px 0;
+	}
+p {
+	padding-bottom: 20px;
+	}
+
+/* header */
+
+header{
+	position: relative;
+	/* P: arrondir les boornes  */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+
+
+
+  /*P: le header  */
+header h1{
+position: relative;
+z-index: 9999;
+width: 600px;
+padding: 20px 0 20px 20px;
+color: #b5df26;
+}
+
+/* css du menu: génèral au particulier*/
+
+/* 1. Adaptons la forme des listes (balises <ul></ul>  */
+#menu, #menu ul /* Liste */     
+
+{
+
+        padding : 0; /* pas de marge intérieure */
+
+        margin : 0; /* ni extérieure */
+
+        list-style : none; /* on supprime le style par défaut de la liste */
+
+        line-height : 21px; /* on définit une hauteur pour chaque élément */
+
+        text-align : center; /* on centre le texte qui se trouve dans la liste */
+
+}
+
+
+#menu /* Ensemble du menu */
+
+{
+
+        font-weight : bold; /* on met le texte en gras */
+
+        font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
+
+        font-size : 12px; /* hauteur du texte : 12 pixels */
+
+}
+ /* 2. le contenu des listes (balises de liens) */
+ #menu a /* Contenu des listes */
+
+{
+        display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+
+        padding : 0; /* aucune marge intérieure */
+
+        background : #000; /* couleur de fond */        
+
+        color : #fff; /* couleur du texte */
+
+        text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+
+        width : 239px; /* largeur */
+
+}
+
+/* 3. les éléments des listes (balises <li></li>;) et les listes (balises <ul></ul>;). */
+#menu li /* Éléments des listes */      
+
+{ 
+
+        float : left; 
+
+        /* pour IE qui ne reconnaît pas "transparent" */
+
+        border-right : 1px solid #fff; /* on met une bordure blanche à droite de chaque élément */
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+
+html>body #menu li
+
+{
+
+        border-right: 1px solid transparent ; /* on met une bordure transparente à droite de chaque élément */
+
+}
+
+
+#menu li ul /* Sous-listes */
+
+{ 
+
+        position: absolute; /* Position absolue */
+
+        width: 144px; /* Largeur des sous-listes */
+
+        left: -999em; /* Hop, on envoie loin du champ de vision */
+
+}
+
+
+
+#menu li ul li /* Eléments de sous-listes */
+
+{
+
+        /* pour ie qui ne reconnaît pas "transparent" (comme précédemment) */
+
+        border-top : 1px solid #fff; /* on met une bordure blanche en haut de chaque élément d'une sous-liste */
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+
+html>body #menu li ul li                
+
+{
+
+        border-top : 1px solid transparent; /* on met une bordure transparente en haut de chaque élément */
+
+}
+#menu li ul li a 
+{
+         background     :tranparent url(../images/logos_icons/glass.png) repeat ;
+}
+
+
+
+#menu li ul ul 
+
+{
+
+        margin    : -22px 0 0 144px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
+
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+
+        border-left     : 1px solid #fff ; /* Petite bordure à gauche pour ne pas coller ... */      
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" ... je me répète ;-) */
+
+html>body #menu li ul ul                
+
+{
+
+        border-left     : 1px solid transparent ; /* on met une bordure transparente sur la gauche de chaque élément */
+
+}
+
+/*4. on procéde aussi */
+#menu li:hover ul ul, #menu li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
+
+{
+
+        left: -999em; /* On expédie les sous-sous-listes hors du champ de vision */
+
+}
+
+
+#menu li:hover ul, #menu li li:hover ul, #menu li.sfhover ul, #menu li li.sfhover ul  /* Sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste */
+
+{
+
+        left: auto; /* Repositionnement normal */
+
+        min-height: 0; /* Corrige un bug sous IE */
+
+}
+
+/* curved border radius */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+/* curved border radius */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+.welcome
+{
+margin-top:10px;
+}
+.welcome p
+{
+color:#FF0000;
+font-family:"Courier New", Courier, monospace;
+}
+.welcome p span
+{
+color:#330099;
+font-size:18px;
+}
+
+
+
+	
+/* footer */
+
+
+footer section {
+width: 300px;
+float: left;
+padding: 0 10px;
+
+}
+
+
+
+footer section p{
+  font-size: 12px;
+  margin:0px;
+
+ 
+	}
+.p1{
+	float:left;
+	color:blue;
+    text-decoration:blink;
+	}
+.p2{
+	float:right;
+	color:green;
+    text-decoration:inherit;
+	}
+
+	
+/* curved border radius */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	
+
+

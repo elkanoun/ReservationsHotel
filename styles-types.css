@@ -1,0 +1,60 @@
+#content {
+	position:relative;
+	margin-top: 50px;
+	float: left; 
+	width: 900px;
+	height:380px; 
+	margin:10px 5px 10px 0; 
+	padding:5px 20px 5px 20px;
+	background-color: #fff;
+	
+/* curved border radius */
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+/* columns */
+
+#content ul.column {
+	width: 100%;
+	padding:inherit;
+	margin-left:5px;
+	margin-right:5px;
+	list-style: none;
+}
+
+#content ul.column li {
+	float: left;
+	width: 230px; /*Set default width*/
+	padding: 0;
+	margin: 5px 0;
+	display: inline;
+}
+
+#content .block {
+	height: 240px;
+	font-size: 1em;
+	margin-right: 10px; /*Creates the 10px gap between each column*/
+	padding: 20px;
+	background: #0da4dd;
+/* curved border radius */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#content .block a {
+	color: #fff;
+	font-weight: bold;
+	}
+	
+#content .block img {
+  /*Flexible image size with border*/
+	width: 89%;  /*Took 1% off of the width to prevent IE6 bug*/
+	padding: 5%;
+	background:#fff;
+	margin: 0 auto;
+	display: block;
+	-ms-interpolation-mode: bicubic; /*prevents image pixelation IE 6/7 */
+	}
+
+/* end of column configuration */
